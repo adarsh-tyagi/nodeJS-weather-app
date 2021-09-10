@@ -1,0 +1,21 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+    <title>Mausam | About</title>
+  </head>
+  <body>
+    <div class="main">
+      {{>header}}
+        <div class="about">
+            <h1>About this app</h1>
+            <p>This weather information application uses api to search the location and weather report. <span ><a href="https://www.mapbox.com/" target="_blank" class="api__style">MapBox API </a></span> is used to get location geocode according to search term you enter and then <span><a href="https://weatherstack.com/" target="_blank" class="api__style">Weatherstack API </a></span> is used to get the weather report.</p>
+        </div>
+        {{>footer}}
+    </div>
+
+  </body>
+</html>

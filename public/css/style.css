@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Glory:wght@100&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Glory:wght@100&family=Lobster&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* *****  Error Page Styling  ***** */
+
+.error {
+  width: 100vw;
+  height: 100vh;
+  background-color: #102020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error > h1 {
+  color: red;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  text-shadow: whitesmoke 1px 1px 2px;
+}
+
+.error > a {
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: cyan;
+}
+
+.error > a:hover {
+  color: rgb(3, 122, 122);
+}
+
+/* *****  Index page Styling  ***** */
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: #24323d; */
+  background-image: url("../img/pic.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(36,50,61,1);
+}
+
+/* Header styling */
+.header {
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #102020;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header > a {
+  text-decoration: none;
+  color: rgb(132, 255, 255);
+  font-size: 1.5rem;
+  font-family: "Kaushan Script", cursive;
+}
+.header > a:hover {
+  color: rgb(2, 189, 189);
+}
+.header__logo {
+  color: #d33f58 !important;
+  font-weight: bold !important;
+  font-size: 2.5rem !important;
+}
+.header__logo:hover {
+  color: #cf1443 !important;
+}
+
+/* Footer styling */
+.footer {
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #102020;
+  text-align: center;
+  top: 100vh;
+  position: sticky;
+}
+.footer > h1 {
+  font-size: 1.2rem;
+  color: #f5f749;
+  font-family: "Lobster", cursive;
+}
+
+/* index styling */
+.headingPage {
+  padding: 2rem 3rem;
+}
+.headingPage > h1 {
+  color: #b1cc74;
+  margin-bottom: 2rem;
+  font-family: "Glory", sans-serif;
+}
+
+form {
+  margin-bottom: 2rem;
+}
+form > input {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 3px solid #d68c45;
+}
+form > button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  font-size: 1.5rem;
+  background-color: rgb(238, 44, 83);
+  color: white;
+  cursor: pointer;
+}
+form > button:hover {
+  background-color: crimson;
+}
+
+.message {
+  font-family: "Courgette", cursive;
+}
+
+#msg-1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #d1345b;
+}
+#msg-2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7cdf64;
+}
+
+/* *****  About page styling  ***** */
+.about {
+  padding: 2rem 3rem;
+  /* background-color: #24323d */
+}
+
+.about > h1 {
+  color: #edb88b;
+  margin-bottom: 2rem;
+  font-family: "Glory", sans-serif;
+}
+
+.about > p {
+  color: #c6d8af;
+  font-size: 1.3rem;
+  font-family: "Lobster Two", cursive;
+}
+
+.api__style {
+  color: #f84267;
+  text-decoration: none;
+  font-family: "Kaushan Script", cursive;
+}
+.api__style:hover {
+  color: #ff0035;
+}
+
+/* Responsive design */
+@media (max-width: 650px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form > input {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 500px){
+  form > input{
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px){
+  .header {
+  width: 100vw;
+  padding: 1rem 2rem;
+  background-color: #102020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
